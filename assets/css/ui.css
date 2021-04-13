@@ -1,0 +1,1005 @@
+ 
+* {
+    outline:none !important;
+}
+.Height100 {
+    height:100%
+}
+
+
+/************************* Headings *******************************/
+h1 {
+    color:#31394D;
+    font-family:RobotoMedium;
+    font-size:36px;
+    line-height:43px;
+    margin-bottom:0;
+}
+h1 i {
+    margin-right:9px;
+    font-size:26px;
+} 
+h2 {
+    color:#31394D;
+    font-family:RobotoMedium;
+    font-size:20px;
+    line-height:43px;
+    margin-bottom:0;
+}
+h2 span {
+    color:rgba(236,236,236,0.3)
+}
+h2 i {
+    margin-right:12px;
+}
+
+
+.row {
+    margin-left:-16px;
+    margin-right:-16px;
+}
+.row .col-sm-3,
+.row .col-sm-4,
+.row .col-sm-6,
+.row .col-sm-12 {
+    padding-left:16px;
+    padding-right:16px;
+}
+.rowflex {
+    display:inline-flex;
+    align-items:center;
+    width:100%;
+}
+
+.mb32 {
+    margin-bottom:32px !important;
+}
+.ml32 {
+    margin-left:32px;
+} 
+ 
+
+
+.CloseButton {
+    display:inline-block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 8px;
+    background: rgba(195,216,219,0.1);
+    text-align: center;
+    color: #fff;
+    font-size: 62px;
+    position: relative;
+    cursor:pointer;
+    overflow:hidden;
+    right:-30px;
+}
+.CloseButton:after {
+    content:'';
+    width:100%;
+    height:0;
+    background:rgba(255,255,255,0.05); 
+    position:absolute;
+    bottom:0;
+    left:0;
+    transition:0.3s;
+}
+.CloseButton:hover:after {
+    height:100%;
+}
+
+/************************* btn-default *******************************/
+.btn-default {
+    font-family:RobotoBold;
+    color:#fff;
+    font-size:24px;
+    background-image:linear-gradient(to right, #B1B6C2, #4A597D);
+    border: none;
+    border-radius:8px; 
+    padding:0 60px;
+    height:90px;
+    line-height:90px;
+    position: relative;
+} 
+.btn-default:after {
+    content:'';
+    width:100%;
+    height:0;
+    background:rgba(255,255,255,0.1);
+    position:absolute;
+    bottom:0;
+    left:0;
+    transition:0.3s;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus {
+    background: linear-gradient(to right, #B1B6C2, #4A597D) !important;
+    border: none;
+    box-shadow: none !important;
+    color:#fff;
+} 
+.btn-default:hover:after,
+.btn-default:focus:after,
+.btn-default.focus:after {
+    height:100%;
+}
+.btn-default:not(:disabled):not(.disabled).active,
+.btn-default:not(:disabled):not(.disabled):active {
+    background:linear-gradient(to right, #B1B6C2, #4A597D) !important;
+}
+
+.btn-default.disabled,
+.btn-default:disabled {
+    opacity: 0.35;
+    background:linear-gradient(to right, #B1B6C2, #4A597D) !important;
+}
+
+
+/************************* btn-success *******************************/
+.btn-success {
+    font-family:RobotoMedium;
+    color:#fff;
+    font-size:20px;
+    background-image:linear-gradient(to right, #29CB97, #1AAA7B);
+    border: none;
+    border-radius:5px; 
+    padding:0 50px;
+    height:70px;
+    line-height:70px;
+    position: relative;
+} 
+.btn-success:after {
+    content:'';
+    width:100%;
+    height:0;
+    background:rgba(255,255,255,0.1);
+    position:absolute;
+    bottom:0;
+    left:0;
+    transition:0.3s;
+    border-radius:5px;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success.focus {
+    background-image:linear-gradient(to right, #29CB97, #1AAA7B);
+    border: none;
+    box-shadow: none !important;
+    color:#fff;
+} 
+.btn-success:hover:after,
+.btn-success:focus:after,
+.btn-success.focus:after {
+    height:100%;
+}
+.btn-success:not(:disabled):not(.disabled).active,
+.btn-success:not(:disabled):not(.disabled):active {
+    background-image:linear-gradient(to right, #29CB97, #1AAA7B);
+}
+
+.btn-success.disabled,
+.btn-success:disabled {
+    opacity: 0.35;
+    background-image:linear-gradient(to right, #29CB97, #1AAA7B);
+}
+
+
+/************************* btn-warning *******************************/
+.btn-warning {
+    font-family:RobotoMedium;
+    color:#fff;
+    font-size:20px;
+    background-image:linear-gradient(to right, #FEC400, #E3B000);
+    border: none;
+    border-radius:5px; 
+    padding:0 50px;
+    height:70px;
+    line-height:70px;
+    position: relative;
+} 
+.btn-warning:after {
+    content:'';
+    width:100%;
+    height:0;
+    background:rgba(255,255,255,0.1);
+    position:absolute;
+    bottom:0;
+    left:0;
+    transition:0.3s;
+    border-radius:5px;
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning.focus {
+    background-image:linear-gradient(to right, #FEC400, #E3B000);
+    border: none;
+    box-shadow: none !important;
+    color:#fff;
+} 
+.btn-warning:hover:after,
+.btn-warning:focus:after,
+.btn-warning.focus:after {
+    height:100%;
+}
+.btn-warning:not(:disabled):not(.disabled).active,
+.btn-warning:not(:disabled):not(.disabled):active {
+    background-image:linear-gradient(to right, #FEC400, #E3B000);
+}
+
+
+/************************* btn-primary *******************************/
+.btn-primary {
+    font-family:RobotoMedium;
+    color:#fff;
+    font-size:20px;
+    background-image:linear-gradient(to right, #D46AD0, #BB51B7);
+    border: none;
+    border-radius:5px; 
+    padding:0 50px;
+    height:70px;
+    line-height:70px;
+    position: relative;
+} 
+.btn-primary:after {
+    content:'';
+    width:100%;
+    height:0;
+    background:rgba(255,255,255,0.1);
+    position:absolute;
+    bottom:0;
+    left:0;
+    transition:0.3s;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus {
+    background-image:linear-gradient(to right, #D46AD0, #BB51B7);
+    border: none;
+    box-shadow: none !important; 
+    color:#fff;
+}
+.btn-primary:hover:after,
+.btn-primary:focus:after,
+.btn-primary.focus:after {
+    height:100%;
+}
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-image:linear-gradient(to right, #D46AD0, #BB51B7);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    opacity: 0.35;
+    background-image:linear-gradient(to right, #D46AD0, #BB51B7);
+}
+
+
+
+/************************* btn-info *******************************/
+.btn-info {
+    font-family:RobotoBold;
+    color:#fff;
+    font-size:24px;
+    background-image:linear-gradient(to right, #1550C6, #012B7D);
+    border: none;
+    border-radius:8px; 
+    padding:0 60px;
+    height:90px;
+    line-height:90px;
+    position: relative;
+} 
+.btn-info:after {
+    content:'';
+    width:100%;
+    height:0;
+    background:rgba(255,255,255,0.1);
+    position:absolute;
+    bottom:0;
+    left:0;
+    transition:0.3s;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info.focus {
+    background: linear-gradient(to right, #1550C6, #012B7D) !important;
+    border: none;
+    box-shadow: none !important;
+    color:#fff;
+} 
+.btn-info:hover:after,
+.btn-info:focus:after,
+.btn-info.focus:after {
+    height:100%;
+}
+.btn-info:not(:disabled):not(.disabled).active,
+.btn-info:not(:disabled):not(.disabled):active {
+    background: linear-gradient(to right, #1550C6, #012B7D) !important;
+}
+.btn-info.disabled,
+.btn-info:disabled {
+    opacity: 0.35;
+    background: linear-gradient(to right, #1550C6, #012B7D) !important;
+}
+
+ 
+ 
+
+/************************* Forms, Inputs *******************************/
+.FormWidth {
+    display:inline-block;
+    width:450px;
+    max-width:100%;  
+    margin:0 auto;
+    margin-bottom:16px;  
+    padding:16px;
+    border-radius:5px;
+} 
+.FormWidth.Width100 {
+    width:100%;
+}
+.FormHeight {
+    height:600px;
+}
+.form-control {
+    background:#fff;
+    border:solid #31394D 1px;
+    height:56px; 
+    line-height:56px;
+    border-radius:5px;
+    font-family:RobotoRegular; 
+    color:#31394D;
+    font-size:16px;
+    width:100%;
+    padding-left:12.5px;
+    transition:0.3s;
+}
+.form-control:focus {
+    box-shadow:none;
+    background:#ffffff;
+    border:solid #31394D 1px;
+    color:#31394D;
+    box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+}
+.form-control.Error {
+    border:solid #B22828 1px;
+}
+.form-control.Success {
+    border:solid #28B2A9 1px;
+} 
+.form-control::-webkit-input-placeholder {
+    color:#31394D;
+    opacity: 1;
+}
+.form-control::-moz-placeholder {
+    color:#31394D;
+    opacity: 1;
+}
+.form-control::placeholder {
+    color:#31394D;
+    opacity: 1;
+}
+ 
+
+.TextError {
+    color:#B22828;
+    text-align:left;
+    font-size:13px;
+    font-family:NunitoBold;
+    width:100%;
+    display:inline-block;
+}
+.TextSuccess {
+    color:#28B2A9;
+    text-align:left;
+    font-size:13px;
+    font-family:NunitoBold;
+    width:100%;
+    display:inline-block;
+} 
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-radius:4px;
+}
+
+
+
+.FormText {}
+.FormText p {
+    color:#31394D;
+    font-size:13px;
+    line-height:24px;
+    font-family: RobotoMedium;
+    margin-bottom:7px;
+}
+.FormText p a {
+    color:#1AAA7B;
+    font-family: RobotoMedium;
+    text-decoration:none; 
+}
+.FormText p a.Color1 {
+    color:#fff;
+}
+.FormText p a:hover {
+    text-decoration:underline;
+}
+
+.Checkbox {
+    display:inline-block;
+    position:relative;
+}
+.Checkbox span {
+    color: #C3D8DB;
+    font-size: 26px;
+    position: relative;
+    top: -3px;
+}
+.Checkbox input {
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    width:100%;
+    height:100%;
+    z-index:9;
+    transition:0.3s;
+    cursor: pointer;
+}
+.Checkbox label {
+    background:#15B4C6; 
+    width:39px;
+    height:24px;
+    border-radius:30px;
+    position: relative;
+    transition:0.3s;
+    margin-left:15px;
+    margin-right:15px;
+}
+.Checkbox label:after {
+    content:'';
+    width:18px;
+    height:18px;
+    background:#fff;
+    border-radius:100%;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    transition:0.3s;
+}
+.Checkbox input:checked ~ label {
+    background:#15B4C6;
+}
+.Checkbox input:checked ~ label:after { 
+    right:18px;
+    background:#ffffff;
+}
+ 
+
+ 
+.MaterialCheckbox {
+    display:inline-block; 
+}
+.CheckMaterial {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+.CheckboxLabel {    
+    font-family:RobotoRegular;
+    color:#31394D;
+    font-size:14px;
+    line-height:24px;
+    position: relative;
+    cursor: pointer;
+    line-height: 24px;
+    padding-top:1px;
+    padding-bottom: 2px;
+    padding-left: 28px;
+}
+.CheckboxLabel a {
+    color:#1AAA7B;
+    text-decoration:none; 
+    width:100%;
+    display:inline-block;
+    font-size:14px;
+}
+.CheckboxLabel a:hover {
+    text-decoration:underline;
+}
+.CheckboxLabel:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    margin: 3px;
+    background:transparent;
+    border: 1px #919191 solid;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    line-height: 18px;
+    padding-left: 0.5px;
+}
+.CheckMaterial:checked ~ .CheckboxLabel:before {
+    content:"\eed8";
+    font-family:IcoFont !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    background-color: #BB51B7;
+    border-color: #BB51B7;
+    color:#fff;
+    font-size:15px;
+}
+
+.CheckMaterial:disabled ~ .CheckboxLabel {
+    color: rgba(0, 0, 0, 0.38);
+}
+
+.CheckMaterial:disabled ~ .CheckboxLabel:before {
+    border-color: rgba(145, 145, 145, 0.40);
+}
+
+.CheckMaterial:checked:disabled ~ .CheckboxLabel:before {
+    background-color:#BB51B7;
+    background-clip: padding-box;
+}
+.CheckboxDesc {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.54);
+    margin-left: 28px;
+}
+.CheckMaterial ~ .CheckboxLabel:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.CheckMaterial:focus ~ .CheckboxLabel:after {
+    -webkit-animation: ClickWave 0.5s;
+    animation: ClickWave 0.5s;
+}
+
+.CheckMaterial:checked ~ .CheckboxLabel:after {
+    background-color: #BB51B7;
+}
+
+.CheckMaterial:not(:checked) ~ .CheckboxLabel:after {
+    background-color: #BB51B7;
+} 
+.CheckboxColor1 .CheckboxLabel:before {
+    background:transparent;
+    border:solid #B7B7B7 1px;
+    border-radius:3px;
+}
+
+@keyframes ClickWave {
+    0% {
+        width: 24px;
+        height: 24px;
+        opacity: 0.5;
+    }
+    100% {
+        width: 48px;
+        height: 48px;
+        margin-left: -12px;
+        margin-top: -12px;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes ClickWave {
+    0% {
+        width: 24px;
+        height: 24px;
+        opacity: 0.5;
+    }
+    100% {
+        width: 48px;
+        height: 48px;
+        margin-left: -12px;
+        margin-top: -12px;
+        opacity: 0;
+    }
+}
+
+  
+.FileInput {
+    overflow:hidden;
+    cursor:pointer;
+}
+.InputButton {
+    position: absolute;
+    top: 5.5px;
+    right: 5px;
+    cursor:pointer; 
+    z-index:9;
+    text-align:center;
+    line-height:43px;
+    color:#D46AD0;
+    font-size:26px;
+    background:rgba(212,106,208,0.3); 
+    width:44px;
+    height:44px;
+    display:inline-block;
+    border-radius:5px !important;
+    overflow:hidden;
+    transition:0.3s;
+} 
+.InputButton input {
+    opacity:0;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.InputButton input:after { 
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top: 0;
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+}
+.InputButton:hover { 
+    background:rgba(212,106,208,1);
+    color:#fff; 
+}  
+
+
+
+/************************* Bootstrap Selectpicker *******************************/
+.bootstrap-select>.dropdown-toggle:after {}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width:100%;
+}
+.SelectSize {
+    margin-top:-5px;
+}
+.SelectSize .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width:235px !important;
+    float:right;
+}
+.bootstrap-select > .dropdown-toggle {
+    background:transparent; 
+    height: 56px;
+    line-height:56px;
+    padding:0 12.5px;
+    border-radius:5px; 
+    font-family: RobotoRegular;
+    color: #31394D;
+    font-size:16px;
+    border:solid #31394D 1px;
+    background:#fff;
+}
+.bootstrap-select.Select .dropdown-toggle {
+     
+}
+.bootstrap-select >.dropdown-toggle:focus { 
+    box-shadow:none;
+    background:#fff; 
+    border:solid #848484 1px; 
+    color:#29313a;
+    box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+}
+.dropdown-toggle::after {
+    border:none;
+    background:url('../img/caret.svg') no-repeat;
+    background-size:100% 100%;
+    width:12px;
+    height:6px;
+}
+.bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+    outline:none !important;
+}
+.btn-check:active+.btn-light, 
+.btn-check:checked+.btn-light,
+.btn-light.active, 
+.btn-light:active,
+.show>.btn-light.dropdown-toggle { 
+    background:#fff; 
+    border:solid #29313a 1px;
+    color:#31394D;
+    box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+}  
+.bootstrap-select .dropdown-menu {
+    background:#fff;
+    padding:0;
+    color:#31394D;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+    box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+    border-top:solid rgba(195,216,219,0.3) 1px;
+}
+
+.bootstrap-select .dropdown-item {
+    padding:1rem;
+    font-family: RobotoRegular;
+    color:#31394D;
+    font-size:16px;
+    border:0;
+}
+
+.bootstrap-select .dropdown-item.active,
+.bootstrap-select .dropdown-item:active {
+    background:#BB51B7;
+    color:#fff;
+} 
+.bootstrap-select .dropdown-item:hover {
+    background:#BB51B7;
+    color:#fff
+}
+
+ 
+
+
+
+
+/************************* Table *******************************/
+.TableDiv {
+    display:inline-block;
+    width:100%;
+    position: relative;
+}  
+.TableContent {  
+    padding-top:22px;  
+    padding:20px 30px 0px 30px;
+}
+.TableContent .Nohistoryyet {
+    display:inline-block;
+    width:100%;
+    color:#31394D;
+    font-family:RobotoBold;
+    font-size:20px;
+    line-height:45px;
+    text-align:center; 
+    padding-top:65px;
+    padding-bottom:80px; 
+} 
+
+.TableContent .Nohistoryyet .Image {}
+.TableContent .Nohistoryyet .Image img {
+    height:176px;
+    margin-bottom:30px;
+}
+
+.table {
+    
+}
+tbody, td, tfoot, th, thead, tr {
+    border:0
+}
+.table thead {
+    border-bottom:solid #DFDFDF 1px;
+}
+.table thead tr th {
+    color:#AAAAAA;
+    font-size:16px;
+    line-height:28px;
+    font-family:RobotoRegular;
+    padding-bottom:30px;
+    padding-top:15px;
+}
+.table tbody tr { 
+    
+} 
+.table tbody tr td {
+    color:#31394D;
+    font-size:18px;
+    line-height:28px;
+    font-family:RobotoRegular;
+    padding:30px .5rem  12px .5rem;
+}
+.table tbody tr td a { 
+    color:#43d1a4;
+    font-size:18px;
+    line-height:28px;
+    text-decoration:none;
+    font-family:RobotoMedium;
+    text-transform:uppercase;
+}
+.table tbody tr td a:hover {
+     opacity:0.8;
+}
+
+/************************* Text *******************************/
+.TextDiv {
+    display:inline-block;
+    width:100%;
+    color:#31394D;
+    font-family:RobotoMedium;
+    font-size:16px;
+    line-height:35px;
+}
+.TextDiv p {}
+.TextDiv .Item {
+    display:inline-block;
+    margin-right:40px;
+    font-size:18px;
+    line-height:31px; 
+}
+.TextDiv .Item span {
+    font-family:RobotoBold;
+    font-size:32px;
+    line-height:55px;
+    padding-left:3px;
+}
+.TextDiv .Item .btn {
+    position: relative;
+    top:-8px;
+}
+.TextDiv .Item span.Color1 {
+    color:#ED1E79;
+} 
+.TextDiv .Item span.Color2 {
+    color:#00F2B0;
+}
+
+
+/************************* LogOut *******************************/ 
+.LogOut {  
+    display:inline-flex;
+    align-items:center;
+    width:100%;
+    height:100%;
+    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px);
+    background: rgba(33, 36, 40,0.2);
+    position: absolute;
+    top:0;
+    right:0%; 
+    z-index:0;
+    transition:0.3s;
+    visibility: hidden;
+    opacity:0;
+}
+.LogOut.Show {
+    visibility:visible;
+    opacity:1;
+    z-index:999999;
+}  
+.LogOut .Info {
+    width:100%; 
+    text-align:center;
+}
+.LogOut .Info .Icon {
+    font-size:45px;
+    color:#fff;
+}
+.LogOut .Info .Text {
+    font-family:RobotoBold;
+    font-size:32px;
+    line-height:55px;
+    color:#fff;
+    margin-bottom:55px;
+    margin-top:50px;
+}
+.LogOut .Info .Buttons {}
+.LogOut .Info .Buttons .btn {
+    margin-right:15px;
+    margin-left:15px;
+    width:100px;
+} 
+.LogOutBTN {
+    width:47px;
+    height:47px;
+    line-height:66px;
+    display:inline-block;
+    border-radius:100%;
+    background:transparent;
+    border-radius:100%;
+    text-align:center;
+    position: relative;
+    cursor: pointer;
+}
+.LogOutBTN i {    
+    color: #FF007C;
+    font-size: 28px;
+    position: relative;
+    top: 6px;
+    left: 4px;
+    transition:0.3s;
+}
+.LogOutBTN:hover i {
+    color:#DBC3C3
+}
+
+
+/************************* Language *******************************/
+.Language {
+    display:inline-block; 
+    width:67px;
+    height:37px;
+    line-height:37px;
+    text-align:left;
+    position:relative;
+    z-index:999;
+} 
+.Language span {
+    display:inline-block;
+    float:left;
+    width:100%;
+    height:100%;
+    color:#31394D;
+    font-size:16px;
+    font-family:RobotoBold;
+    text-transform:uppercase;
+    padding-left:10px;
+    cursor:pointer;
+    transition:0.3s;
+    border:solid #B8C5D3 1px;    
+    border-radius:5px;
+} 
+.Language span i {
+    color:#B8C5D3;
+    transition:0.3s;
+} 
+.Language .Lang {
+    position:absolute;
+    top:calc(100% - 2px);
+    width:100%;
+    border:solid #B8C5D3 1px;
+    background:#F5F6FA;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    overflow:hidden;
+    visibility:hidden;
+    opacity:0;
+    transition:0.3s;
+}
+.Language .Lang a {
+    display:block;
+    width:100%;
+    padding-left:10px;
+    font-size:16px;
+    font-family:RobotoBold;
+    text-decoration:none;
+    text-transform:uppercase;
+    color:#31394D;
+    transition:0.3s;
+} 
+.Language:hover span i {
+    color:#31394D;
+} 
+.Language .Lang a:hover  {
+    background:#B8C5D3;
+}
+.Language:hover .Lang {
+    visibility:visible;
+    opacity:1;
+}
+
+
+
+
+/************************* PayIcons *******************************/
+.PayIcons {
+    display:inline-block;
+    width:100%; 
+    margin-top:18px;
+}
+.PayIcons .Image {
+    display:inline-block; 
+    margin-right:22px;
+}
+.PayIcons .Image img {}
+
+
+
+.SorosTrade {
+    background:url('../img/soros_trade_bg.svg') no-repeat;
+    background-position:30px center;
+    background-size:40%;
+}
+ 

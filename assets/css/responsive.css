@@ -1,0 +1,263 @@
+@media (max-width: 992px) {
+    
+    .HideMobile {
+        display:none !important;
+    }
+    .Height100 {
+        height:auto;
+    }
+
+    h1 {
+        font-size:18px;
+    }
+    h1 i {
+        font-size:22px;
+    }
+
+    h2 {
+        font-size:22px;
+    } 
+
+    .Language { 
+        text-align: center;
+        width: 100%;
+    }
+    .Language a { 
+        font-size: 13px;
+        width: 40px;
+        height: 30px;
+        line-height: 15px;
+    }
+
+    .ContentDiv .Header {
+        text-align:center;
+        margin-bottom:0;
+    }
+    .FormWidth {
+        margin-bottom:10px;
+    }
+
+
+    .ContentDiv .Header .Buttons {
+        margin-top:40px;
+    }
+
+    .Sidebar {
+        width:calc(100% - 60px); 
+        position:absolute;
+        z-index:999999; 
+        left:-100%;
+        transition:0.3s;
+        overflow-y:scroll;
+        height:100%;
+        box-shadow:0px -3px 15px rgba(0,0,0,1);
+        padding-top:30px;
+        padding-bottom:50px;
+        background-image: linear-gradient(to right, #232230 , #06060C);
+    }
+    .Sidebar .MainMenu ul li {
+        margin-bottom:5px;
+        padding:0 20px;
+    }
+    .Sidebar .MainMenu ul li a {
+        padding-left:30px;
+        font-size:16px;
+        height:60px; 
+        line-height:60px;
+    }
+    .Sidebar .MainMenu ul li a span {
+        font-size:19px;
+    }    
+    .Sidebar .Logo {
+        margin-bottom:45px;
+        height:52px;    
+    }    
+    .Sidebar .Checkbox {
+        margin-top:30px;
+        margin-bottom:30px;
+    } 
+    
+    
+    .BurgerIcon {
+        position:absolute;
+        top:8px;
+        right:15px;
+        font-size:36px;
+        color:#fff;
+    }
+    .BurgerIcon .Icon2 {
+        display:none;
+    }
+    .ShowSidebar .BurgerIcon .Icon1 {
+        display:none;
+    }
+    .ShowSidebar .BurgerIcon .Icon2 {
+        display:inline-block;
+    }
+    .ShowSidebar {
+        overflow:hidden;
+    } 
+    .ShowSidebar .Sidebar {
+        left:0;
+    }
+
+
+
+    .ContentDiv {
+        width:100%;
+        padding-left:10px;
+        padding-right:10px;
+    } 
+    
+    .ContentInside {
+        margin-top:0 !important;
+        padding-top:22px; 
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .ContentInside .Content {
+        margin-top:0 !important
+    }
+    .ContentInside .Buttons .btn {
+        width:100%;
+        margin-left:0;
+        margin-top:20px;
+    }
+    .DashBoard .NewsBox {
+        height:200px;
+    }
+    .DashBoard .NewsBox .Info {
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .DashBoard .NewsBox .Info .Name {
+        font-size:21px;
+        line-height:30px;
+    }
+    .DashBoard .EventBox {
+        height:auto;
+        display:inline-block;
+        padding-top:25px;
+        padding-bottom: 20px;
+        margin-top:20px;
+    }
+    .DashBoard .EventBox .Item {
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .DashBoard .EventBox a {
+        margin-top:12px;
+    }
+    .PayIcons .Image { 
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .PayIcons .Image img {
+        width:40px;
+    }
+
+
+    .FormWidth {
+        margin-top: 15px !important;
+        margin-bottom: 30px;
+        padding:20px 14px;
+    }
+    .FormWidth .btn {
+        width:100%;
+    }
+    .FormHeight {
+        height:auto;
+    }
+    .InputButton {
+        width:50px;
+    }
+    .CloseButton {
+        display:none;
+    }
+    .TextDiv .Item .btn {
+        margin-top:30px;
+    }
+    
+    .LoginPage {
+        padding-left:25px;
+        padding-right:25px;
+        background-size: auto 20%;
+    }
+    .LoginPage .FormDiv {
+        width:100%;
+    }
+    .LoginPage:after { 
+        width: 125px;
+        height: 70px; 
+    }
+    .LoginPage .btn {
+        width:100%;
+    }
+    
+
+
+    
+    .NewsPage .rowflex {
+        display:inline-block;
+        width:auto;
+    }
+    .NewsPage .NewsList .Item {}
+    .NewsPage .NewsList .Item .Image {
+        height:160px;
+        margin-bottom:15px;
+    }
+    .NewsPage .NewsList .Item .Info .Name { 
+        font-size: 26px;
+        line-height: 43px;
+    }
+    .NewsPage .NewsList .Item .Info .Text { 
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .NewsPage .NewsList .AllNews {
+        display:none
+    }
+
+
+    .EventsBox {
+        margin-top:25px
+    }
+    .EventsBox .List {
+        margin-top:0;
+    }
+    .EventsBox .List .Item{
+        margin-bottom:15px;
+    }
+    .EventsBox .List .Item .Info {
+        display:inline-grid;
+    }
+    .EventsBox .List .Item .Info span {
+        font-size:18px;
+    }
+    .EventsBox .List .Item .Info label {
+        font-size:14px;
+    }
+    .EventsBox .CalLink { 
+        right: 0;
+        position: relative;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+
+
+
+@media (min-width: 992px) {
+    .HideDesktop {
+        display:none !important
+    } 
+}
+
+
+
+@media (min-width:1024px) and (max-width:1540px){
+    
+ 
+}

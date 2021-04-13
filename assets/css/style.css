@@ -1,0 +1,375 @@
+html {
+    height:100%;
+}
+
+body {
+    padding:0;
+    margin:0;
+    height:100%; 
+    background:#F5F6FA;
+    overflow-x:hidden;
+}
+/* .BodyScroll {
+    overflow:hidden;
+} */
+ 
+ 
+  
+.MainDiv {
+    display:inline-block;
+    width:100%;
+    float:left;
+}
+.MainDiv .ContentFLex {
+    display:flex;
+}
+
+/***************** Sidebar *****************/
+.Sidebar {
+    display:inline-block;
+    float:left;
+    width:80px;
+    min-height:100vh;  
+    padding-top:32px;   
+    background:#FFFFFF;
+    box-shadow:0px 0px 5px rgba(229,233,242,1)
+}
+.Sidebar .Logo {
+    width:56px;
+    height:56px;
+    margin-bottom:48px; 
+    margin: auto; 
+    text-align:center;
+} 
+.Sidebar .MainMenu {
+    margin-top:32px;
+}
+.Sidebar .MainMenu ul {
+    padding:0;
+}
+.Sidebar .MainMenu ul li {
+    display:inline-block;
+    width:91px;   
+    position:relative;
+    margin-bottom:4px;
+}
+.Sidebar .MainMenu ul li a {
+    display:block; 
+    color:#B8C5D3;  
+    font-family:RobotoMedium;
+    height:70px;
+    line-height:70px;  
+    padding-right:10px;
+    text-decoration:none;
+    text-align:center;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    transition:0.5s; 
+}
+.Sidebar .MainMenu ul li a i { 
+    font-size:24px;
+    top:3px;
+    position: relative;
+} 
+.Sidebar .MainMenu ul li:hover a,
+.Sidebar .MainMenu ul li.active a {
+    background-image:linear-gradient(to right, #D46AD0, #BB51B7);
+    color:#fff;
+}
+/* 
+.Sidebar .MainMenu ul li:after{
+    content:'';
+    width:4px;
+    height:31px;
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    background:#D46AD0;
+    position:absolute;
+    left:0;
+    top:50%;
+    margin-top:-15px;
+    transition:0.3s;
+    opacity:0;
+}   */
+ 
+
+
+/***************** SidebarRight *****************/
+.SidebarRight {
+    background: #fff;
+    width:330px;
+    display:inline-block;
+}
+.Reminder {
+    display:inline-block;
+    width:100%;
+    padding:20px;
+    border-top:solid #EBEDF4 1px;
+}
+.Reminder .List {}
+.Reminder .List h2 {
+    margin-bottom:17px;
+    font-family:RobotoRegular;
+}
+.Reminder .List .Item { 
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom:10px;
+}
+.Reminder .List .Item .Icon {
+    display:inline-table;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    border-radius:5px;
+    text-align:center;
+    color:#fff;
+    font-size:20px;
+}
+.Reminder .List .Item .Icon.Icon1 {background:#FEC400;}
+.Reminder .List .Item .Icon.Icon2 {background:#29CB97;}
+.Reminder .List .Item .Icon.Icon3 {background:#B558F6;}
+.Reminder .List .Item .Info {
+    display:inline-block;
+    padding-left:10px;
+}
+.Reminder .List .Item .Info span {
+    color:#31394D;
+    font-size:14px;
+    line-height:17px;
+    font-family:RobotoRegular;
+    display:inline-block;
+    width:100%;
+}
+.Reminder .List .Item .Info label {
+    color:#A9ACB2;
+    font-family:RobotoRegular;
+    font-size:14px;
+    line-height:17px;
+    width:100%;
+    position: relative;
+    top:-3px;
+}
+.Reminder .List .Item .Info label i {
+    color:#D46AD0;
+    font-style:normal;
+    float:right;
+}
+
+
+
+
+/***************** ContentDiv *****************/
+.ContentDiv {   
+    width:calc(100% - 410px);
+    display:inline-block;
+    float:left;
+    padding:0 32px;
+    padding-bottom:40px;
+    position: relative;
+    /* overflow:hidden; */
+}
+.ContentDiv .Header {
+    padding-top:26px;
+    margin-bottom:16px; 
+}
+.ContentDiv .Header h1 {
+ 
+}
+.ContentDiv .Header .Buttons {
+    display:inline-block;
+    width:auto;
+    margin-left:16px;
+} 
+.ContentDiv .Header .Buttons .btn {
+    margin-left:16px;
+}
+.ContentDiv .Header .HeadButtons {
+    display:inline-block;
+    width:auto;
+} 
+
+
+.ContentInside {
+    display:inline-block;
+    width:100%;   
+    border-radius:5px; 
+    /* padding:32px; */
+    background:#ffffff;
+}
+.ContentInside .Content {
+    display:inline-block;
+    width:100%; 
+    padding:0px 0 14px 0;
+}
+.ContentInside h1 {
+    height:40px;
+    display:inline-block;
+    margin-bottom:30px;
+}
+
+.ContentInside .Buttons {
+    floaT:right;
+    margin-right:-25px;
+} 
+.ContentInside .TradingWidget {
+    background:#1e222d;
+    border:solid #434651 1px;
+    height:75px;
+    border-radius:8px;
+    overflow:hidden;
+}
+.tradingview-widget-copyright {
+    display:none !important;
+}
+
+ 
+ 
+ 
+
+  
+
+/***************** News *****************/
+.NewsPage {
+    display:inline-block;
+    position: relative; 
+    width:100%;
+}
+.NewsPage .NewsList {} 
+.NewsPage .NewsList .Item {
+    display:inline-block;
+    width:100%;
+    background:#fff;
+    padding:16px 16px;
+    border-radius:5px;
+    margin-bottom:30px;
+    padding-bottom:60px;
+}
+.NewsPage .NewsList .Item .Image {
+    width:100%;
+    height:320px;
+}
+.NewsPage .NewsList .Item .Image img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:5px;
+}
+.NewsPage .NewsList .Item .Info {
+    padding-top:15px;
+}
+.NewsPage .NewsList .Item .Info .Name {
+    font-family:RobotoBold;
+    font-size:32px;
+    line-height:45px;
+    color:#31394D;
+    margin-bottom:10px;
+}
+.NewsPage .NewsList .Item .Info .Text {
+    font-family:RobotoMedium;
+    color:#31394D;
+    font-size:18px;
+    line-height:40px;
+}
+.NewsPage .NewsList .Item .Info .Text p {
+    margin-bottom:0;
+}
+.NewsPage .AllNews {
+    color:#BB51B7;
+    font-family:RobotoMedium;
+    font-size:18px;
+    line-height:35px;
+    position:absolute;
+    bottom:45px;
+    right:16px;
+    text-decoration:none;
+}
+
+
+
+/***************** Login & Register *****************/
+.LoginPage {
+    display:inline-flex;
+    width:100%;
+    min-height:100%;  
+    overflow:hidden;
+    padding-top:80px;
+    padding-bottom:50px;
+    padding-left:270px;
+    position: relative;
+} 
+.LoginPage .FormDiv {
+    width:328px;
+    display:inline-block;
+    float:left;
+    margin-right:32px;
+}
+.LoginPage .Flex {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+.LoginPage .Content {
+    width:100%;
+}
+.LoginPage .Form {
+    display:inline-block;
+    width:100%; 
+}
+.LoginPage .Form .Title {
+    color:#31394D;
+    font-size:32px;
+    line-height:55px;
+    font-family:RobotoBold;
+} 
+.LoginPage .ShowLang {
+    position: absolute;
+    right:140px;
+    top:32px;
+}
+ 
+ 
+/***************** Success *****************/
+.SuccessDiv {
+    display:inline-flex;
+    align-items:center;
+    width:100%;
+    height:100%;
+    background:#fff;
+}
+.SuccessDiv .Flex {
+    display:inline-flex;
+    align-items:center;
+    width:100%;
+}
+.SuccessDiv .Info {
+    width:100%;
+}
+.SuccessDiv .Info .Check {
+    color:#1AAA7B;
+    font-size:70px;
+    text-align: center;
+    margin-bottom:15px;
+}
+.SuccessDiv .Info .Text {
+    font-family:RobotoBold;
+    font-size:32px;
+    line-height:55px;
+    color:#31394D;
+    text-align:center;
+    margin-bottom:30px;
+}
+.SuccessDiv .Info .Buttons {
+    text-align:center;
+}
+.SuccessDiv .Info .Buttons .btn {
+    width:220px;
+    max-width:100%;
+    padding:0
+}
+
+
+
+
