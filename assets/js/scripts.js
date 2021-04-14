@@ -2,6 +2,12 @@
 
 $(document).ready(function() {
 
+
+	$(window).on('load', function() {
+        $('.modal').modal('show');
+    });
+
+
     $('.Select').selectpicker();
 
 	$('.BurgerIcon').click(function(e){
