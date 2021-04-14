@@ -1,13 +1,14 @@
 .CalendarContent { 
   border-radius:8px;
   overflow:hidden;   
-  background-image: linear-gradient(to right, #272738 , #141421);
+  background:#fff;
+  padding:20px 40px;
 } 
 
 
 
 td.fc-day {
-  font-family:AvenirSemiBold;
+  font-family:RobotoSemiBold;
   
 }
 
@@ -19,8 +20,7 @@ td.fc-today {
     font-family: 'Roboto', sans-serif;
     color: #FFF;
     font-size: 14px !important;
-    font-weight: 500 !important; background:transparent !important;
-    backdrop-filter: blur(12px) brightness(84%); 
+    font-weight: 500 !important; background:transparent !important; 
     
 }
 
@@ -30,7 +30,7 @@ td.fc-today {
     background:#00F2B0;
     border:solid #00F2B0 1px;
     color:#fff;
-    font-family:AvenirBold;
+    font-family:RobotoBold;
     padding-left:5px;
 }
 
@@ -61,7 +61,7 @@ html .fc,
 
 .fc-header td {
   white-space: nowrap;
-  padding: 25px 10px 10px 20px;
+  padding: 25px 0px 10px 0px;
 }
 
 .fc-header-left {
@@ -89,7 +89,7 @@ html .fc,
   white-space: nowrap;
   font-size:24px;
   font-weight: 100; 
-  font-family:AvenirBold;
+  font-family:RobotoBold;
 }
 
 span.fc-button {
@@ -168,7 +168,8 @@ span.fc-button {
   
 }
 .CalendarContent table tbody td {
-    border:solid #29293e 1px;
+    border:solid #fff 1px;
+    background:#E5E9F2;
 }
 .fc-widget-header {
   
@@ -185,12 +186,12 @@ span.fc-button {
   color: #FFFFFF;
   border-radius: 50%;
   margin: 4px;
-  font-family:AvenirBold;
+  font-family:RobotoBold;
 }
 
 .fc-cell-overlay {
   /* semi-transparent rectangle while dragging */
-  background:#a19f9b;
+  background:#BB51B7;
   opacity: .3; 
   /* for IE */
 }
@@ -219,7 +220,7 @@ span.fc-button {
   border-radius:0px;
   margin-right:16px;
   border:0;
-  background:rgba(195,216,219,0.1)
+  background-image: linear-gradient(to right, #D46AD0, #BB51B7);
 }
 
 .fc-state-default.fc-corner-right {
@@ -227,7 +228,7 @@ span.fc-button {
   border-radius:0px;
   margin-right:16px;
   border:0;
-  background:rgba(195,216,219,0.1)
+  background-image: linear-gradient(to right, #D46AD0, #BB51B7);
 }
 
 /*
@@ -445,7 +446,7 @@ border-bottom-right-radius: 3px;
 
 table.fc-border-separate {
   border-collapse: separate;
-  background:#3D3D57;
+  background:#fff;
 }
 
 .fc-border-separate th,
@@ -470,11 +471,12 @@ table.fc-border-separate {
 
 .fc-border-separate tr.fc-last th {
     border-bottom-width: 1px;
-    border-color: #cdcdcd;
+    border-color: transparent;
     font-size:20px !important;
     font-weight: 300;
     line-height: 30px;
-    font-family:AvenirBold;
+    font-family:RobotoBold;
+    color:#B8C5D3;
 }
 
 .fc-border-separate tbody tr.fc-first td,
@@ -504,14 +506,16 @@ table.fc-border-separate {
   float: right;
   padding: 0 2px;
 }
-
+.fc-grid .fc-other-month {
+  background:#F4F7FB;
+}
 .fc-grid .fc-other-month .fc-day-number {
   opacity: 0.3;
   filter: alpha(opacity=30);
   /* for IE */
   /* opacity with small font can sometimes look too faded
   might want to set the 'color' property instead
-  making day-numbers bold also fixes the problem */
+  making day-numbers bold also fixes the problem */ 
 }
 
 .fc-grid .fc-day-content {
@@ -693,7 +697,7 @@ table.fc-border-separate {
 }
 
 thead tr.fc-first {
-    background:rgba(61,61,87,1);
+    background:#fff;
 }
 
 table.fc-header {
@@ -701,15 +705,15 @@ table.fc-header {
 }
 
 .fc-week .fc-day > div .fc-day-number { 
-    font-size: 16px;
-    min-width: 19px;
-    width: 30px;
-    height: 30px;
-    font-family: AvenirBold;
-    color: #fff;
-    text-align: center;
-    line-height: 33px;
-}
+
+  min-width: 19px;
+  width: 24px;
+  height: 24px;
+  font-family: RobotoBold;
+  color: #748AA1;
+  text-align: center;
+  line-height: 25px;
+  font-size: 13px;
 }
 
 .fc-week .fc-day div {

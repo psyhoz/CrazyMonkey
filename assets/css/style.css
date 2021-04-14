@@ -245,6 +245,7 @@ body {
     border-radius:5px;
     margin-bottom:30px;
     padding-bottom:60px;
+    position: relative;
 }
 .NewsPage .NewsList .Item .Image {
     width:100%;

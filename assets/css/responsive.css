@@ -17,16 +17,13 @@
     h2 {
         font-size:22px;
     } 
-
-    .Language { 
-        text-align: center;
-        width: 100%;
+    .MainDiv .ContentFLex {
+        display:inline-block;
+        width:100%;
     }
-    .Language a { 
-        font-size: 13px;
-        width: 40px;
-        height: 30px;
-        line-height: 15px;
+
+    .SidebarRight {
+        width:100%;
     }
 
     .ContentDiv .Header {
@@ -40,6 +37,21 @@
 
     .ContentDiv .Header .Buttons {
         margin-top:40px;
+        margin-left:0;
+    }
+    .ContentDiv .Header .Buttons .btn {
+        width:100%;
+        margin-left:0;
+        margin-bottom:20px;
+    }
+
+    
+    .Language { 
+        text-align: center;
+        width: 100%;
+    } 
+    .Language .Lang a {
+        padding-left:0;
     }
 
     .Sidebar {
@@ -58,12 +70,15 @@
     .Sidebar .MainMenu ul li {
         margin-bottom:5px;
         padding:0 20px;
+        width:100%;
     }
     .Sidebar .MainMenu ul li a {
         padding-left:30px;
         font-size:16px;
         height:60px; 
         line-height:60px;
+        border-radius:5px;
+        padding-left:10px;
     }
     .Sidebar .MainMenu ul li a span {
         font-size:19px;
@@ -83,7 +98,7 @@
         top:8px;
         right:15px;
         font-size:36px;
-        color:#fff;
+        color:#31394D;
     }
     .BurgerIcon .Icon2 {
         display:none;
@@ -243,6 +258,16 @@
         width: 100%;
         display: inline-block;
         text-align: center;
+    }
+
+    .LogOut .Info .Text { 
+        margin-bottom: 41px;
+        margin-top: 36px;
+        font-size:30px;
+    }
+    .LogOut .Info .Buttons .btn {
+        width:calc(100% - 30px);
+        margin-bottom:30px;
     }
 }
 
