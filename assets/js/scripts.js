@@ -173,7 +173,7 @@ $(document).ready(function() {
 			$('#staticBackdrop').modal('show');
 			$('input[name="title"]').val(info.title);
 			$('textarea[name="comment"]').val(info.comment);
-			// $('.className:checked').val(info.className[0]);
+			$('#' + info.className[0]).attr('checked', true)
 			$('input[name="time"]').val(info.time);
 			// change the border color just for fun
 			// info.el.style.borderColor = 'red';
@@ -184,7 +184,7 @@ $(document).ready(function() {
 				start: new Date(y, m, 1),
 				allDay: false,
 				comment: 'test',
-				className: 'info',
+				className: ['blue'],
 				time: '12:00PM'
 				
 			},
@@ -194,7 +194,7 @@ $(document).ready(function() {
 				start: new Date(y, m, 5),
 				allDay: false,
 				comment: 'test',
-				className: 'info',
+				className: ['red'],
 				time: '12:00PM'
 			},
 			{
@@ -203,7 +203,7 @@ $(document).ready(function() {
 				start: new Date(y, m, 9),
 				allDay: false,
 				comment: 'test',
-				className: 'info',
+				className: ['yellow'],
 				time: '12:00PM'
 			}
 		],			
