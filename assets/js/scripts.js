@@ -3,11 +3,11 @@
 $(document).ready(function() {
 
 
-	$(window).on('load', function() {
-        $('.modal').modal('show');
-    });
+	// $(window).on('load', function() {
+    //     $('.modal').modal('show');
+    // });
 
-
+	
     $('.Select').selectpicker();
 
 	$('.BurgerIcon').click(function(e){
@@ -56,7 +56,10 @@ $(document).ready(function() {
 	  
 	/* initialize the external events
 	-----------------------------------------------------------------*/
-
+	let start = '';
+	let className = '';
+	let end = '';
+	let title = '';
 	$('#external-events div.external-event').each(function() {
 	
 		// create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
@@ -91,7 +94,7 @@ $(document).ready(function() {
 		firstDay: 1, //  1(Monday) this can be changed to 0(Sunday) for the USA system
 		selectable: true,
 		defaultView: 'month',
-		
+		start : '',
 		axisFormat: 'h:mm',
 		columnFormat: {
 			month: 'ddd',    // Mon
@@ -107,19 +110,36 @@ $(document).ready(function() {
 		allDaySlot: false,
 		selectHelper: true,
 		select: function(start, end, allDay) {
-			var title = prompt('Event Title:');
-			if (title) {
-				calendar.fullCalendar('renderEvent',
-					{
-						title: title,
-						start: start,
-						end: end,
-						allDay: allDay
-					},
-					true // make the event "stick"
-				);
-			}
-			calendar.fullCalendar('unselect');
+			// var title = prompt('Event Title:');
+			$('#staticBackdrop').modal('show');
+			
+			$('.addEvent').click(function(e){
+				e.preventDefault();
+				var title = $('input[name="title"]').val();
+				var comment = $('textarea[name="comment"]').val();
+				var className = $('.className:checked').val();
+				var time = $('input[name="time"]').val();
+				console.log(calendar)
+				if (title) {
+					calendar.fullCalendar('renderEvent',
+						{
+							title: title,
+							start: start,
+							end: end,
+							allDay: true,
+							className: className,
+							comment: comment,
+							time: time
+						},
+						true // make the event "stick"
+					);
+					
+				}
+				calendar.fullCalendar('unselect');
+				$('#staticBackdrop').modal('hide');
+				$('.FormEvent').trigger("reset");
+			})
+			
 		},
 		droppable: true, // this allows things to be dropped onto the calendar !!!
 		drop: function(date, allDay) { // this function is called when something is dropped
@@ -145,28 +165,52 @@ $(document).ready(function() {
 			}
 			
 		},
-		
+		eventClick: function(info) {
+			console.log(info)
+			// alert('Event: ' + info.title);
+			// alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
+			// alert('View: ' + info.view.type);
+			$('#staticBackdrop').modal('show');
+			$('input[name="title"]').val(info.title);
+			$('textarea[name="comment"]').val(info.comment);
+			// $('.className:checked').val(info.className[0]);
+			$('input[name="time"]').val(info.time);
+			// change the border color just for fun
+			// info.el.style.borderColor = 'red';
+		  },
 		events: [
 			{
 				title: 'All Day Event',
-				start: new Date(y, m, 1)
+				start: new Date(y, m, 1),
+				allDay: false,
+				comment: 'test',
+				className: 'info',
+				time: '12:00PM'
+				
 			},
 			{
 				id: 1,
 				title: 'Repeating Event',
 				start: new Date(y, m, 5),
 				allDay: false,
-				className: 'info'
+				comment: 'test',
+				className: 'info',
+				time: '12:00PM'
 			},
 			{
 				id: 2,
 				title: 'Event 2',
 				start: new Date(y, m, 9),
 				allDay: false,
-				className: 'info'
+				comment: 'test',
+				className: 'info',
+				time: '12:00PM'
 			}
 		],			
 	});
+
+	
+
 	
 	
 });
